@@ -2069,10 +2069,12 @@ ul.sociel_link li a {
 	margin-top: 17px;
 	font-weight: 500;
 }
+
 .yellow-box img {
-	width:80px;
-	height:40px;
+	width: 80px;
+	height: 40px;
 }
+
 .yellow-box a:hover {
 	background: wheat;
 	color: black;
