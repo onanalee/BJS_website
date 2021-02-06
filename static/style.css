@@ -1672,7 +1672,7 @@ float: right;
 
 .head_top {
 	background: #ffc221;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 ul.sociel_link {
 	display: flex;
@@ -1706,7 +1706,7 @@ font-size: 18px;
 }
 .header {
 	background: #fff;
-	padding-bottom: 35px;
+	padding-bottom: 15px;
 }
 
 .logo a {
@@ -2151,15 +2151,13 @@ ul.lik li a:hover {
 
 .copyright {
 	background-color: #ffc221;
-	padding: 20px 0px;
-	/* margin-top: 20px; */
+	padding: 10px 0px;
 }
 
 .copyright a {
 	color: #023023;
 	font-size: 18px;
 	line-height: 22px;
-	padding-bottom:10px;
 	padding-left:50px;
 }
 
