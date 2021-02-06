@@ -1670,8 +1670,9 @@ float: right;
 	color: #fff;
 }
 
-.head_top {background: #ffc221;
-margin-bottom: 35px;
+.head_top {
+	background: #ffc221;
+	margin-bottom: 35px;
 }
 ul.sociel_link {
 	display: flex;
@@ -1681,10 +1682,13 @@ margin: 0 auto;
 float: left;
 }
 
-.top-box p {
+.top-box a {
 	float: right;
 	padding-top: 10px;
     color: #000;
+}
+.top-box img {
+	margin-right:10px;
 }
 ul.sociel_link li {
 	display: inline-block;
@@ -2076,7 +2080,10 @@ margin-top: 20px;
 
 .footer {
 	background: #1b1b1b;
-    padding-top: 70px;
+	padding-top: 70px;
+}
+.footer .container {
+	padding-bottom:40px;
 }
 ul.sociel {
 	display: flex;
@@ -2145,14 +2152,15 @@ ul.lik li a:hover {
 .copyright {
 	background-color: #ffc221;
 	padding: 20px 0px;
-	margin-top: 70px;
+	/* margin-top: 20px; */
 }
 
-.copyright p {
+.copyright a {
 	color: #023023;
 	font-size: 18px;
 	line-height: 22px;
-	text-align: center;
+	padding-bottom:10px;
+	padding-left:50px;
 }
 
 .copyright a:hover {
@@ -2387,4 +2395,15 @@ text-align: center;
 	left: 10px;
 	top: inherit;
 	bottom: 10px;
+}
+
+
+.footer_logo{
+
+}
+
+.sk_flag{
+	max-width:50px;
+	max-height:25px;
+	margin-right: 10px;
 }
