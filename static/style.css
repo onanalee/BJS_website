@@ -2176,13 +2176,16 @@ ul.lik li a:hover {
 .copyright {
 	background-color: #ffc221;
 	padding: 10px 0px;
+	/* font-family: 'Cute Font', cursive; */
+	/* font-family: 'Jua', sans-serif; */
+	font-family: 'Gaegu', cursive;
 }
 
 .copyright a {
 	color: #023023;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 22px;
-	margin-left: 50px;
+	margin-left: 80vw;
 }
 
 .copyright a:hover {
