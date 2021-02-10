@@ -13,7 +13,7 @@ def home():
 
 @app.route('/about_us')
 def about():
-    return render_template('about.html')
+    return render_template('about_us.html')
 
 @app.route('/applications')
 def applications():
@@ -21,15 +21,15 @@ def applications():
 
 @app.route('/products')
 def products():
-    return render_template('product.html')
+    return render_template('products.html')
 
 @app.route('/tech_support')
 def timezone():
-    return render_template('tech.html')
+    return render_template('tech_support.html')
 
 @app.route('/contact_us')
 def exchangeRates():
-    return render_template('contact.html')
+    return render_template('contact_us.html')
 
 
 if __name__ == '__main__':
