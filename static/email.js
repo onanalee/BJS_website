@@ -13,4 +13,3 @@ function sendEmail(){
        console.log('FAILED...', error);
     });
 }
-
