@@ -9,10 +9,15 @@
     <meta content="Cleaning Company Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="../static/img/favicon.ico" rel="icon">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +27,17 @@
 
     <!-- Template Stylesheet -->
     <link href="../static/style.css" rel="stylesheet">
+
+
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="../static/email.js"></script>
+    <script>
+        (function start() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_QQaNYH9BQkbKmcH9EGzMG');
+        })();
+    </script>
 </head>
 
 <body>
@@ -33,7 +49,7 @@
                     <div class="col-lg-3">
                         <div class="brand">
                             <a href="/">
-    
+
                                 <img src="../static/img/bjs_logo3.png" alt="Logo">
                             </a>
                         </div>
@@ -68,7 +84,8 @@
                                     <a href="/" class="nav-item nav-link active">Home</a>
                                     <a href="/about_us" class="nav-item nav-link">About Us</a>
                                     <div class="nav-item dropdown">
-                                        <a href="/products" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
+                                        <a href="/products" class="nav-link dropdown-toggle"
+                                            data-toggle="dropdown">Products</a>
                                         <div class="dropdown-menu">
                                             <a href="/products" class="dropdown-item">Motors</a>
                                             <a href="#" class="dropdown-item">Motor Components</a>
@@ -82,229 +99,236 @@
                                     <a href="/applications" class="nav-item nav-link">Applications</a>
                                     <a href="/tech_support" class="nav-item nav-link">Tech Support</a>
                                     <a href="/contact_us" class="nav-item nav-link">Contact Us</a>
-                                    
+
                                     <a href="#" class="btn">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        <!-- Header End -->
+                <!-- Header End -->
 
 
-        <!-- Page Header Start -->
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Contact Us</h2>
-                    </div>
-                    <div class="col-12">
-                        <a href="">Home</a>
-                        <a href="">Contact Us</a>
+                <!-- Page Header Start -->
+                <div class="page-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Contact Us</h2>
+                            </div>
+                            <div class="col-12">
+                                <a href="">Home</a>
+                                <a href="">Contact Us</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Page Header End -->
+                <!-- Page Header End -->
 
 
-        <!-- Contact Start -->
-        <div class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <p>Contact Us</p>
-                    <h2>Find Your Answer / Send Message</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="faqs">
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne"
-                                            aria-expanded="true">
-                                            <span>1</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                                            pretium mi. Curabitur facilisis ornare velit non.
+                <!-- Contact Start -->
+                <div class="contact">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2><span class="contactUs">Send us a message</span></h2>
+                        </div>
+                        <div class="row">
+                            <!-- <div class="col-md-6">
+                                <div class="faqs">
+                                    <div id="accordion">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link collapsed" data-toggle="collapse"
+                                                    href="#collapseOne" aria-expanded="true">
+                                                    <span>1</span> Lorem ipsum dolor sit amet?
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                                    nec
+                                                    pretium mi. Curabitur facilisis ornare velit non.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                                    <span>2</span> Lorem ipsum dolor sit amet?
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                                    nec
+                                                    pretium mi. Curabitur facilisis ornare velit non.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                                    <span>3</span> Lorem ipsum dolor sit amet?
+                                                </a>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                                    nec
+                                                    pretium mi. Curabitur facilisis ornare velit non.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                                    <span>4</span> Lorem ipsum dolor sit amet?
+                                                </a>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                                    nec
+                                                    pretium mi. Curabitur facilisis ornare velit non.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                                    <span>5</span> Lorem ipsum dolor sit amet?
+                                                </a>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                                    nec
+                                                    pretium mi. Curabitur facilisis ornare velit non.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                            <span>2</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                                            pretium mi. Curabitur facilisis ornare velit non.
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <form id="main_form">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <input id="name" type="text" class="form-control"
+                                                    placeholder="Your Name" required="required" name="name" />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <input id="email" type="email" class="form-control"
+                                                    placeholder="Your Email" required="required" name="email" />
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                            <span>3</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                                            pretium mi. Curabitur facilisis ornare velit non.
+                                        <div class="form-group">
+                                            <input id="phone" type="text" class="form-control"
+                                                placeholder="Your Phone Number" name="phone" />
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>4</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                                            pretium mi. Curabitur facilisis ornare velit non.
+                                        <div class="form-group">
+                                            <textarea id="message" class="form-control" rows="6" placeholder="Message"
+                                                required="required" name="message"></textarea>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                                            pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
+                                        <div><button class="btn" onclick="sendEmail()">Send
+                                                Message</button></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="contact-form">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name"
-                                            required="required" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" placeholder="Your Email"
-                                            required="required" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="6" placeholder="Message"
-                                        required="required"></textarea>
-                                </div>
-                                <div><button class="btn" type="submit">Send Message</button></div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- Contact End -->
+                <!-- Contact End -->
+                
 
 
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-contact">
-                            <h2>Get In Touch</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                            <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                            <p><i class="fa fa-envelope"></i>info@example.com</p>
-                            <div class="footer-social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-youtube"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <!-- Footer Start -->
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-contact">
+                                    <h2>Get In Touch</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                    <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-link">
+                                    <h2>Useful Link</h2>
+                                    <a href="">About Us</a>
+                                    <a href="">Our Story</a>
+                                    <a href="">Our Services</a>
+                                    <a href="">Our Projects</a>
+                                    <a href="">Contact Us</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-link">
+                                    <h2>Useful Link</h2>
+                                    <a href="">Our Clients</a>
+                                    <a href="">Clients Review</a>
+                                    <a href="">Ongoing Project</a>
+                                    <a href="">Customer Support</a>
+                                    <a href="">FAQs</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-form">
+                                    <h2>Stay Updated</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>Useful Link</h2>
-                            <a href="">About Us</a>
-                            <a href="">Our Story</a>
-                            <a href="">Our Services</a>
-                            <a href="">Our Projects</a>
-                            <a href="">Contact Us</a>
+                    <div class="container footer-menu">
+                        <div class="f-menu">
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help & FQAs</a>
+                            <a href="">Contact us</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>Useful Link</h2>
-                            <a href="">Our Clients</a>
-                            <a href="">Clients Review</a>
-                            <a href="">Ongoing Project</a>
-                            <a href="">Customer Support</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-form">
-                            <h2>Stay Updated</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
-                            </p>
-                            <input class="form-control" placeholder="Email here">
-                            <button class="btn">Submit</button>
+                    <div class="container copyright">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>&copy; <a href="https://htmlcodex.com">HTML Codex</a>, All Right Reserved.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container footer-menu">
-                <div class="f-menu">
-                    <a href="">Terms of use</a>
-                    <a href="">Privacy policy</a>
-                    <a href="">Cookies</a>
-                    <a href="">Help & FQAs</a>
-                    <a href="">Contact us</a>
-                </div>
-            </div>
-            <div class="container copyright">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>&copy; <a href="https://htmlcodex.com">HTML Codex</a>, All Right Reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+                <!-- Footer End -->
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    </div>
+                <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="../static/lib/easing/easing.min.js"></script>
-    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="../staticlib/lightbox/js/lightbox.min.js"></script>
+            <!-- JavaScript Libraries -->
 
-    <!-- Template Javascript -->
-    <script src="../static/main.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="../static/lib/easing/easing.min.js"></script>
+            <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
+            <script src="../static/lib/lightbox/js/lightbox.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="../static/main.js"></script>
 </body>
 
 </html>
