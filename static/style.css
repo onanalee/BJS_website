@@ -232,6 +232,7 @@ a:hover, a:active, a:focus {
     background: #FFD662;
 }
 
+
 .header .navbar .btn i {
     font-size: 16px;
     margin-right: 8px;
@@ -1877,19 +1878,59 @@ a:hover, a:active, a:focus {
 .w-100 {
     width: 100% !important;
     height: 70vh;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .carousel-item img {
-    opacity: 0.6;
+    opacity: 0.;
 }
 
 .blackCarousel{
-    color:black;
+    /* color:black; */
 }
 .whiteCarousel{
     color: whitesmoke;
 }
 .blackCarousel, .whiteCarousel{
     font-weight: 800;
+}
+.carousel-caption{
+    background-color: rgba(9, 9, 59, 0.4)
+}
+.allButton{
+    position: relative;
+    display: flex;
+    justify-content:center;
+
+    padding: 12px 20px 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background: #00539C;
+    transition: .3s;
+    text-align:center;
+}
+.allButton:hover {
+    color: #000000;
+    background: #FFD662;
+}
+.frontButton{
+    position: relative;
+    justify-content:center;
+
+    padding: 12px 20px 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 214, 98,0.7);
+    transition: .3s;
+    text-align:center;
+}
+.frontButton:hover {
+    color: #ffffff;
+    background: rgba(0, 83, 156,0.7);
 }
