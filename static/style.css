@@ -5,7 +5,7 @@
 /*******************************/
 
 body {
-    color: #666666;
+    /* color: #666666; */
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -74,15 +74,41 @@ a:hover, a:active, a:focus {
     position: relative;
     width: 100%;
     padding: 15px 0 0 0;
-    background: #00539C;
 }
 
 .header.home {
-    margin-bottom: 45px;
-    background: linear-gradient(rgba(0, 83, 156, 1), rgba(0, 83, 156, .9), rgba(0, 83, 156, 1)), url(../img/header.jpg);
+    /* margin-bottom: 45px; */
+    /* background: linear-gradient(rgba(0, 83, 156, 1), rgba(0, 83, 156, .9), rgba(0, 83, 156, 1)), url(../img/header.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#logo {
+    background-color: white;
+}
+
+.brand img {
+    /* position:relative; */
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    max-width: 15vw;
+    min-height: 10vh;
+}
+
+@media(max-width: 992px) {
+    .brand img {
+        max-width: 40vw;
+    }
+}
+
+#logolessMenu {
+    background-color: #00539C;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 @media (min-width: 992px) {
@@ -92,7 +118,7 @@ a:hover, a:active, a:focus {
 }
 
 .header .header-top {
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -106,12 +132,12 @@ a:hover, a:active, a:focus {
     font-weight: 100;
 }
 
-.header .brand img {
+/* .header .brand img {
     width: 100%;
     max-width: 150px;
     height: 100%;
     max-height: 100px;
-}
+} */
 
 .header .topbar {
     position: relative;
@@ -189,7 +215,7 @@ a:hover, a:active, a:focus {
 @media (max-width: 992px) {
     .header .brand {
         text-align: center;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
     }
     .header .topbar {
         text-align: center;
@@ -231,7 +257,6 @@ a:hover, a:active, a:focus {
     color: #000000;
     background: #FFD662;
 }
-
 
 .header .navbar .btn i {
     font-size: 16px;
@@ -413,7 +438,7 @@ a:hover, a:active, a:focus {
     height: 3px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: linear-gradient(to left, #FFD662, #00539C, #FFD662);
+    /* background: linear-gradient(to left, #FFD662, #00539C, #FFD662); */
     border-radius: 100%;
 }
 
@@ -424,7 +449,7 @@ a:hover, a:active, a:focus {
     height: 9px;
     left: calc(50% - 10px);
     bottom: -3px;
-    background: #00539C;
+    /* background: #00539C; */
     border-radius: 5px;
 }
 
@@ -520,7 +545,7 @@ a:hover, a:active, a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
-    margin-top:5vh;
+    margin-top: 5vh;
 }
 
 .service .service-item {
@@ -1859,6 +1884,10 @@ a:hover, a:active, a:focus {
     color: white;
 }
 
+#frontPage {
+    /* background-color: #00539C; */
+}
+
 .carousel {
     /* background-color: #f2f9ff; */
 }
@@ -1882,22 +1911,20 @@ a:hover, a:active, a:focus {
     object-fit: cover;
 }
 
-
-.carousel-caption{
-    background-color: rgba(9, 9, 59, 0.4)
+.carousel-caption {
+    background-color: rgba(9, 9, 59, 0.4);
+    max-width: 100%;
+    width: 100%;
+    left: 0;
 }
-.allButton{
+
+.allButton {
     position: relative;
     display: grid;
     /* left:33%; */
-
-
     padding: 12px 20px 10px 20px;
     /* margin-top:2vh; */
-    margin-bottom:5vh;
-
-
-
+    margin-bottom: 5vh;
     font-size: 13px;
     text-transform: uppercase;
     color: #000000;
@@ -1905,31 +1932,29 @@ a:hover, a:active, a:focus {
     border-radius: 5px;
     background: #FFD662;
     transition: .3s;
-    text-align:center;
+    text-align: center;
 }
+
 .allButton:hover {
     color: #ffffff;
     background: #00539C;
 }
 
-
-
-
-.frontButton{
+.frontButton {
     position: relative;
-    justify-content:center;
-
+    justify-content: center;
     padding: 12px 20px 10px 20px;
     font-size: 13px;
     text-transform: uppercase;
     color: #000000;
     border: none;
     border-radius: 5px;
-    background: rgba(255, 214, 98,1);
+    background: rgba(255, 214, 98, 1);
     transition: .3s;
-    text-align:center;
+    text-align: center;
 }
+
 .frontButton:hover {
     color: #ffffff;
-    background: rgba(0, 83, 156,1);
+    background: rgba(0, 83, 156, 1);
 }
