@@ -374,35 +374,36 @@ a:hover, a:active, a:focus {
 
 .page-header {
     position: relative;
-    margin-bottom: 45px;
-    padding: 90px 0;
+    margin-bottom: 1vh;
+    padding: 30px 0;
+    /* margin-top:10px; */
     text-align: center;
     background: #FFD662;
 }
 
 .page-header h2 {
-    color: #000000;
+    color: #00539C;
     font-size: 60px;
     font-weight: 100;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.page-header a {
+.page-header p {
     position: relative;
-    padding: 0 12px;
+    padding: 0 6px;
     font-size: 22px;
     font-weight: 300;
-    color: #00539C;
-}
-
-.page-header a:hover {
     color: #000000;
 }
 
-.page-header a::after {
+.page-header h2:hover {
+    color: #000000;
+}
+
+.page-header h2::after {
     position: absolute;
-    content: "/";
+    /* content: "/"; */
     width: 8px;
     height: 8px;
     top: -2px;
@@ -411,9 +412,9 @@ a:hover, a:active, a:focus {
     color: #666666;
 }
 
-.page-header a:last-child::after {
+/* .page-header p:last-child::after {
     display: none;
-}
+} */
 
 /*******************************/
 
@@ -1881,7 +1882,7 @@ a:hover, a:active, a:focus {
 }
 
 .contactUs {
-    color: white;
+    color: #00539C;
 }
 
 #frontPage {
