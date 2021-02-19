@@ -611,9 +611,12 @@ a:hover, a:active, a:focus {
 }
 
 .appImage {
+    float:left;
     max-width: 40vw;
     height: 30vh;
     object-fit: contain;
+    margin-right: 2vw;
+    margin-bottom:2vh;
 }
 
 /*******************************/
