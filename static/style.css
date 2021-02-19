@@ -530,15 +530,24 @@ a:hover, a:active, a:focus {
     background: #00539C;
 }
 
+.about-img {
+    margin-bottom: 2vh;
+}
+
 @media (max-width: 767.98px) {
     .about .about-img img {
         margin-bottom: 30px;
     }
 }
 
+.partnerLink {
+    color: blue;
+    text-decoration: underline;
+}
+
 /*******************************/
 
-/********* Service CSS *********/
+/********* Applications CSS *********/
 
 /*******************************/
 
@@ -599,6 +608,12 @@ a:hover, a:active, a:focus {
 .service .service-item a.btn:hover {
     color: #000000;
     background: #FFD662;
+}
+
+.appImage {
+    max-width: 40vw;
+    height: 30vh;
+    object-fit: contain;
 }
 
 /*******************************/
@@ -1959,3 +1974,17 @@ a:hover, a:active, a:focus {
     color: #ffffff;
     background: rgba(0, 83, 156, 1);
 }
+
+/* TABLES START */
+
+.tableImage {
+    width: 10vh;
+    height: 10vh;
+}
+
+.productZoom {
+    font-size: 0.7rem;
+    text-decoration: underline;
+}
+
+/* TABLES END */
