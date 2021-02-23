@@ -4,6 +4,7 @@
 
 /*******************************/
 
+
 body {
     /* color: #666666; */
     background: #ffffff;
@@ -1724,7 +1725,7 @@ a:hover, a:active, a:focus {
 }
 
 .single img {
-    margin: 10px 0 15px 0;
+    /* margin: 10px 0 15px 0; */
 }
 
 .single .table, .single .list-group {
