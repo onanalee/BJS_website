@@ -172,7 +172,7 @@
         </div> -->
         <!-- Feature End -->
 
-        <div class="container">
+        <!-- <div class="container">
             <aside>
                 <h3>Starting / Reserves</h3>
                 <div>
@@ -185,7 +185,7 @@
                         <label for="reserves">Reserves</label>
                     </div>
                 </div>
-                
+
                 <h3>Injured</h3>
                 <div>
                     <div>
@@ -193,7 +193,7 @@
                         <label for="injured">Injured</label>
                     </div>
                 </div>
-                
+
                 <h3>Position</h3>
                 <div>
                     <div>
@@ -209,17 +209,17 @@
                         <label for="center">Center</label>
                     </div>
                 </div>
-                
+
                 <h3>Conference</h3>
                 <div>
                     <div>
                         <input type="checkbox" name="conference" value="east" id="east">
                         <label for="east">Eastern</label>
-                        </div>
+                    </div>
                     <div>
                         <input type="checkbox" name="conference" value="west" id="west">
                         <label for="west">Western</label>
-                        </div>
+                    </div>
                 </div>
                 <h3>NBA Team</h3>
                 <div>
@@ -494,7 +494,7 @@
                     </div>
                 </section>
             </main>
-        </div>
+        </div> -->
 
 
 
@@ -528,40 +528,46 @@
                     <div>
                         <hr>
                         <div>Types</div>
-                        <div><input type="checkbox" id="type1" name="type1" value="Bike">
-                            <label for="type1"> DC Fan</label></div>
+                        <div><input type="checkbox" id="DC" name="productType" value="DC">
+                            <label for="DC"> DC Fan</label></div>
                         <div>
-                            <input type="checkbox" id="type2" name="type2" value="Car">
-                            <label for="type2"> EC Fan</label>
+                            <input type="checkbox" id="EC" name="productType" value="EC">
+                            <label for="EC"> EC Fan</label>
                         </div>
-                        <div><input type="checkbox" id="type3" name="type3" value="Boat">
-                            <label for="type3"> Cross Fan</label>
+                        <div><input type="checkbox" id="Cross" name="productType" value="Cross">
+                            <label for="Cross"> Cross Fan</label>
+                        </div>
+                        <div><input type="checkbox" id="Axial" name="productType" value="Axial">
+                            <label for="Axial">Axial</label>
+                        </div>
+                        <div><input type="checkbox" id="Blower" name="productType" value="Blower">
+                            <label for="Blower">Blower</label>
                         </div>
                     </div>
                     <div>
                         <hr>
                         <div>Sizes</div>
-                        <div><input type="checkbox" id="size1" name="size1" value="Bike">
-                            <label for="size1"> 40mm</label></div>
+                        <div><input type="checkbox" id="40mm" name="size" value="40mm">
+                            <label for="40mm"> 40mm</label></div>
                         <div>
-                            <input type="checkbox" id="size2" name="size2" value="Car">
-                            <label for="size2"> 50mm</label>
+                            <input type="checkbox" id="50mm" name="size" value="50mm">
+                            <label for="50mm"> 50mm</label>
                         </div>
-                        <div><input type="checkbox" id="size3" name="size3" value="Boat">
-                            <label for="size3"> 70mm</label>
+                        <div><input type="checkbox" id="70mm" name="size" value="70mm">
+                            <label for="70mm"> 70mm</label>
                         </div>
                     </div>
                     <div>
                         <hr>
                         <div>Voltage</div>
-                        <div><input type="checkbox" id="voltage1" name="voltage1" value="Bike">
-                            <label for="voltage1"> 50V</label></div>
+                        <div><input type="checkbox" id="50V" name="voltage" value="50V">
+                            <label for="50V"> 50V</label></div>
                         <div>
-                            <input type="checkbox" id="voltage2" name="voltage2" value="Car">
-                            <label for="voltage2"> 110V</label>
+                            <input type="checkbox" id="110V" name="voltage" value="110V">
+                            <label for="110V"> 110V</label>
                         </div>
-                        <div><input type="checkbox" id="voltage3" name="voltage3" value="Boat">
-                            <label for="voltage3"> 220V</label>
+                        <div><input type="checkbox" id="220V" name="voltage" value="220V">
+                            <label for="220V"> 220V</label>
                         </div>
                     </div>
                 </div>
@@ -583,7 +589,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="productItem DC 220V 40mm">
                                 <td>802524VBL
                                     <div>
                                         <img class="tableImage" src="../static/img/dc_sample.jpg">
@@ -593,7 +599,7 @@
                                             </a></div>
                                     </div>
                                 </td>
-                                <td>5 X 1.57 X 8</td>
+                                <td>40mm</td>
                                 <td>DC Fan</td>
                                 <td>4,100 RPM</td>
                                 <td>220V</td>
@@ -601,7 +607,7 @@
                                 <td>lorem ipsum</td>
                                 <td>lorem ipsum</td>
                             </tr>
-                            <tr>
+                            <tr class="productItem EC 110V 50mm">
                                 <td>FFB1424
                                     <div>
                                         <img class="tableImage" src="../static/img/fan.jpg">
@@ -611,7 +617,7 @@
                                             </a></div>
                                     </div>
                                 </td>
-                                <td>260mm</td>
+                                <td>50mm</td>
                                 <td>EC Fan</td>
                                 <td>5,900 RPM</td>
                                 <td>110V</td>
@@ -619,7 +625,7 @@
                                 <td>lorem ipsum</td>
                                 <td>lorem ipsum</td>
                             </tr>
-                            <tr>
+                            <tr class="productItem Cross 220V 70mm">
                                 <td>PFB1224
                                     <div>
                                         <img class="tableImage" src="../static/img/dog.jpg">
@@ -629,7 +635,7 @@
                                             </a></div>
                                     </div>
                                 </td>
-                                <td>120mm</td>
+                                <td>70mm</td>
                                 <td>Cross Fan</td>
                                 <td>1,500 RPM</td>
                                 <td>50V</td>
@@ -637,7 +643,7 @@
                                 <td>lorem ipsum</td>
                                 <td>lorem ipsum</td>
                             </tr>
-                            <tr>
+                            <tr class="productItem DC 220V 70mm">
                                 <td>802524VBL
                                     <div>
                                         <img class="tableImage" src="../static/img/dc_sample.jpg">
@@ -647,7 +653,7 @@
                                             </a></div>
                                     </div>
                                 </td>
-                                <td>5 X 1.57 X 8</td>
+                                <td>70mm</td>
                                 <td>DC Fan</td>
                                 <td>4,100 RPM</td>
                                 <td>220V</td>
@@ -656,7 +662,7 @@
 
                                 <td>lorem ipsum</td>
                             </tr>
-                            <tr>
+                            <tr class="productItem EC 220V 40mm">
                                 <td>FFB1424
                                     <div>
                                         <img class="tableImage" src="../static/img/fan.jpg">
@@ -667,15 +673,15 @@
                                     </div>
                                 </td>
                                 </td>
-                                <td>260mm</td>
+                                <td>40mm</td>
                                 <td>EC Fan</td>
                                 <td>5,900 RPM</td>
-                                <td>110V</td>
+                                <td>220V</td>
                                 <td>5.00 inch H2O</td>
                                 <td>lorem ipsum</td>
                                 <td>lorem ipsum</td>
                             </tr>
-                            <tr>
+                            <tr class="productItem Cross 110V 70mm">
                                 <td>FFB1424
                                     <div>
                                         <img class="tableImage" src="../static/img/fan.jpg">
@@ -686,10 +692,10 @@
                                     </div>
                                 </td>
                                 </td>
-                                <td>120mm</td>
+                                <td>70mm</td>
                                 <td>Cross Fan</td>
                                 <td>1,500 RPM</td>
-                                <td>50V</td>
+                                <td>110V</td>
                                 <td>15.00 inch H2O</td>
                                 <td>lorem ipsum</td>
                                 <td>lorem ipsum</td>

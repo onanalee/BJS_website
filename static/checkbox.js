@@ -1,14 +1,63 @@
-// not exactly vanilla as there is one lodash function
+// // not exactly vanilla as there is one lodash function
+
+// var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
+// var allPlayers = Array.from(document.querySelectorAll('.player'));
+// var checked = {};
+
+// // the "name" in input
+// getChecked('startingReserves');
+// getChecked('injured');
+// getChecked('position');
+// getChecked('nbaTeam');
+// getChecked('conference');
+
+// Array.prototype.forEach.call(allCheckboxes, function (el) {
+//     el.addEventListener('change', toggleCheckbox);
+// });
+
+// function toggleCheckbox(e) {
+//     getChecked(e.target.name);
+//     setVisibility();
+// }
+
+// function getChecked(name) {
+//     checked[name] = Array.from(document.querySelectorAll('input[name=' + name + ']:checked')).map(function (el) {
+//         return el.value;
+//     });
+// }
+
+// function setVisibility() {
+//     allPlayers.map(function (el) {
+//         var startingReserves = checked.startingReserves.length ? _.intersection(Array.from(el.classList), checked.startingReserves).length : true;
+//         var injured = checked.injured.length ? _.intersection(Array.from(el.classList), checked.injured).length : true;
+//         var position = checked.position.length ? _.intersection(Array.from(el.classList), checked.position).length : true;
+//         var nbaTeam = checked.nbaTeam.length ? _.intersection(Array.from(el.classList), checked.nbaTeam).length : true;
+//         var conference = checked.conference.length ? _.intersection(Array.from(el.classList), checked.conference).length : true;
+//         if (startingReserves && injured && position && nbaTeam && conference) {
+//             el.style.display = 'block';
+//         } else {
+//             el.style.display = 'none';
+//         }
+//     });
+// }
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
-var allPlayers = Array.from(document.querySelectorAll('.player'));
+var allPlayers = Array.from(document.querySelectorAll('.productItem'));
 var checked = {};
 
-getChecked('startingReserves');
-getChecked('injured');
-getChecked('position');
-getChecked('nbaTeam');
-getChecked('conference');
+// the "name" in input
+getChecked('productType');
+getChecked('size');
+getChecked('voltage');
+// getChecked('nbaTeam');
+// getChecked('conference');
 
 Array.prototype.forEach.call(allCheckboxes, function (el) {
     el.addEventListener('change', toggleCheckbox);
@@ -27,12 +76,12 @@ function getChecked(name) {
 
 function setVisibility() {
     allPlayers.map(function (el) {
-        var startingReserves = checked.startingReserves.length ? _.intersection(Array.from(el.classList), checked.startingReserves).length : true;
-        var injured = checked.injured.length ? _.intersection(Array.from(el.classList), checked.injured).length : true;
-        var position = checked.position.length ? _.intersection(Array.from(el.classList), checked.position).length : true;
-        var nbaTeam = checked.nbaTeam.length ? _.intersection(Array.from(el.classList), checked.nbaTeam).length : true;
-        var conference = checked.conference.length ? _.intersection(Array.from(el.classList), checked.conference).length : true;
-        if (startingReserves && injured && position && nbaTeam && conference) {
+        var productType = checked.productType.length ? _.intersection(Array.from(el.classList), checked.productType).length : true;
+        var size = checked.size.length ? _.intersection(Array.from(el.classList), checked.size).length : true;
+        var voltage = checked.voltage.length ? _.intersection(Array.from(el.classList), checked.voltage).length : true;
+        // var nbaTeam = checked.nbaTeam.length ? _.intersection(Array.from(el.classList), checked.nbaTeam).length : true;
+        // var conference = checked.conference.length ? _.intersection(Array.from(el.classList), checked.conference).length : true;
+        if (productType && size && voltage) {
             el.style.display = 'block';
         } else {
             el.style.display = 'none';
