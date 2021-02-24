@@ -1720,12 +1720,8 @@ a:hover, a:active, a:focus {
     padding: 45px 0 65px 0;
 }
 
-.single h1, .single h2, .single h3, .single h4, .single h5, .single h6 {
-    font-weight: 400;
-}
-
 .single img {
-    /* margin: 10px 0 15px 0; */
+    margin: 10px 0 15px 0;
 }
 
 .single .table, .single .list-group {
@@ -1980,7 +1976,11 @@ a:hover, a:active, a:focus {
 }
 
 /* TABLES START */
-
+th {
+    background:white;
+    position: sticky;
+    top:0;
+}
 .tableImage {
     width: 10vh;
     height: 10vh;

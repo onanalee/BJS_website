@@ -522,10 +522,10 @@
                     <p>DC Fans</p>
                     <h2>Dog Cat fans...</h2>
                 </div> -->
-
             <div class="row">
                 <div class="col-2" id="filter-input-wrapper">
                     <div>
+                        <button onclick="reset()">Reset Filters</button>
                         <hr>
                         <div>Types</div>
                         <div><input type="checkbox" id="DC" name="productType" value="DC">
@@ -574,9 +574,14 @@
                 <div class="col-10" id="wrapper">
                     <!-- <img class="img-fluid rounded" src="../static/img/single.jpg" alt="Image"> -->
 
+                    <div>
+                        For products not listed below, <a class="partnerLink" target="_blank" rel="noopener noreferrer"
+                            href="/contact_us">please contact us here.
+                        </a>
+                    </div>
                     <table class="table table-bordered">
                         <thead>
-                            <tr>
+                            <tr id="sticky">
                                 <th>Product Code</th>
                                 <th>Dimensions</th>
                                 <th>Type</th>
@@ -609,7 +614,7 @@
                                     <td>lorem ipsum</td>
                                 </tr>
                             </div>
-                            <div >
+                            <div>
                                 <tr class="productItem EC 110V 50mm">
                                     <td>FFB1424
                                         <div>
@@ -670,7 +675,7 @@
                                     <td>lorem ipsum</td>
                                 </tr>
                             </div>
-                            <div >
+                            <div>
                                 <tr class="productItem EC 220V 40mm">
                                     <td>FFB1424
                                         <div>

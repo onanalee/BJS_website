@@ -88,3 +88,7 @@ function setVisibility() {
         }
     });
 }
+
+function reset () {
+    location.reload();
+}
