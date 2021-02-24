@@ -82,7 +82,7 @@ function setVisibility() {
         // var nbaTeam = checked.nbaTeam.length ? _.intersection(Array.from(el.classList), checked.nbaTeam).length : true;
         // var conference = checked.conference.length ? _.intersection(Array.from(el.classList), checked.conference).length : true;
         if (productType && size && voltage) {
-            el.style.display = 'block';
+            el.style.display = 'table-row';
         } else {
             el.style.display = 'none';
         }
